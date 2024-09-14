@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;/*used to preserve the 3d effects that we had applied or aare  applying*/
+   z-index: -1;
+
+}
+#a{
+    transform: translateZ(-40px) scale(5);
+    
+    
+}
+#b{
+    transform: translateZ(-20px) scale(3);
+
+}
+#a , #b{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*used to specify how an image or video should be rezized to fit its container*/
+    z-index: -1;
+}
+h1{
+    font-size: 10rem;/*10rem means 10 times the size of original size*/
+    top: 3rem ;
+    color: white;
+    position:absolute;
+    letter-spacing: 4px;
+    text-shadow:0, 0 ,10px rgba(0, 0,0, 0.3) ;
+
+}
+section{
+    background-color: rgb(45,45,45) ;
+    color: white;
+    padding: 5rem 0;
+}
+.bg1{
+    background-image: url(sport-1.jpg);/*img is used to set pic 'on' the website whereas background image is used to set the image in the background*/
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translatey(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
